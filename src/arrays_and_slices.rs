@@ -32,7 +32,7 @@ fn main() {
     // starting_index is the first position in the slice
     // ending_index is one more than the last position in the slice
     println!("borrow a section of the array as a slice");
-    analyze_slice(&ys[1 .. 4]);
+    analyze_slice(&ys[1..4]);
 
     // Example of empty slice `&[]`
     let empty_array: [u32; 0] = [];

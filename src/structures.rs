@@ -30,14 +30,20 @@ struct Rectangle {
 }
 
 fn rect_area(r: Rectangle) -> f32 {
-    let Rectangle { top_left: Point { x: x1, y: y1 }, bottom_right: Point { x: x2, y: y2 } } = r;
-    return (x2-x1).abs() * (y2-y1).abs();
+    let Rectangle {
+        top_left: Point { x: x1, y: y1 },
+        bottom_right: Point { x: x2, y: y2 },
+    } = r;
+    return (x2 - x1).abs() * (y2 - y1).abs();
 }
 
 fn square(p: Point, w: f32) -> Rectangle {
     return Rectangle {
         top_left: Point { ..p },
-        bottom_right: Point { x: p.x + w, y: p.y + w }
+        bottom_right: Point {
+            x: p.x + w,
+            y: p.y + w,
+        },
     };
 }
 
@@ -65,11 +71,17 @@ fn main() {
     println!("second point: ({}, {})", bottom_right.x, bottom_right.y);
 
     // Destructure the point using a `let` binding
-    let Point { x: left_edge, y: top_edge } = point;
+    let Point {
+        x: left_edge,
+        y: top_edge,
+    } = point;
 
     let _rectangle = Rectangle {
         // struct instantiation is an expression too
-        top_left: Point { x: left_edge, y: top_edge },
+        top_left: Point {
+            x: left_edge,
+            y: top_edge,
+        },
         bottom_right: bottom_right,
     };
 
@@ -87,7 +99,13 @@ fn main() {
 
     println!("pair contains {:?} and {:?}", integer, decimal);
 
-    println!("area {}", rect_area(Rectangle { top_left: Point { x: 1.0, y: 2.0 }, bottom_right: Point { x: 3.0, y: 4.0 } }));
+    println!(
+        "area {}",
+        rect_area(Rectangle {
+            top_left: Point { x: 1.0, y: 2.0 },
+            bottom_right: Point { x: 3.0, y: 4.0 }
+        })
+    );
 
     println!("square {:?}", square(point, 2.0))
 }

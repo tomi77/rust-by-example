@@ -1,4 +1,4 @@
-use std::fmt::{self, Formatter, Display};
+use std::fmt::{self, Display, Formatter};
 
 // Tuples can be used as function arguments and as return values
 fn reverse(pair: (i32, bool)) -> (bool, i32) {
@@ -26,10 +26,9 @@ fn transpose(m: Matrix) -> Matrix {
 
 fn main() {
     // A tuple with a bunch of different types
-    let long_tuple = (1u8, 2u16, 3u32, 4u64,
-                      -1i8, -2i16, -3i32, -4i64,
-                      0.1f32, 0.2f64,
-                      'a', true);
+    let long_tuple = (
+        1u8, 2u16, 3u32, 4u64, -1i8, -2i16, -3i32, -4i64, 0.1f32, 0.2f64, 'a', true,
+    );
 
     // Values can be extracted from the tuple using tuple indexing
     println!("long tuple first value: {}", long_tuple.0);
@@ -40,7 +39,6 @@ fn main() {
 
     // Tuples are printable
     println!("tuple of tuples: {:?}", tuple_of_tuples);
-    
     // But long Tuples (more than 12 elements) cannot be printed
     // let too_long_tuple = (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13);
     // println!("too long tuple: {:?}", too_long_tuple);
@@ -67,5 +65,4 @@ fn main() {
 
     println!("Matrix:\n{}", matrix);
     println!("Transpose:\n{}", transpose(matrix));
-
 }
