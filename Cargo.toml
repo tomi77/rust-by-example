@@ -4,44 +4,68 @@ version = "0.0.0"
 
 [[bin]]
 name = "hello_world"
-path = "src/hello_world.rs"
+path = "src/hello_world/hello_world.rs"
 
 [[bin]]
 name = "comments"
-path = "src/comments.rs"
+path = "src/hello_world/comments.rs"
 
 [[bin]]
 name = "formatted_print"
-path = "src/formatted_print.rs"
+path = "src/hello_world/formatted_print.rs"
 
 [[bin]]
 name = "debug"
-path = "src/debug.rs"
+path = "src/hello_world/debug.rs"
 
 [[bin]]
 name = "display"
-path = "src/display.rs"
+path = "src/hello_world/display.rs"
 
 [[bin]]
 name = "testcase_list"
-path = "src/testcase_list.rs"
+path = "src/hello_world/testcase_list.rs"
 
 [[bin]]
 name = "formatting"
-path = "src/formatting.rs"
+path = "src/hello_world/formatting.rs"
 
 [[bin]]
 name = "literals_and_operators"
-path = "src/literals_and_operators.rs"
+path = "src/primitives/literals_and_operators.rs"
 
 [[bin]]
 name = "tuples"
-path = "src/tuples.rs"
+path = "src/primitives/tuples.rs"
 
 [[bin]]
 name = "arrays_and_slices"
-path = "src/arrays_and_slices.rs"
+path = "src/primitives/arrays_and_slices.rs"
 
 [[bin]]
 name = "structures"
-path = "src/structures.rs"
+path = "src/custom_types/structures.rs"
+
+[[bin]]
+name = "enums"
+path = "src/custom_types/enums.rs"
+
+[[bin]]
+name = "type_aliases"
+path = "src/custom_types/type_aliases.rs"
+
+[[bin]]
+name = "use"
+path = "src/custom_types/use.rs"
+
+[[bin]]
+name = "c-like"
+path = "src/custom_types/c-like.rs"
+
+[[bin]]
+name = "testcase_linked_list"
+path = "src/custom_types/testcase_linked_list.rs"
+
+[[bin]]
+name = "constants"
+path = "src/custom_types/constants.rs"
