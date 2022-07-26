@@ -1,0 +1,47 @@
+[package]
+name = "rust-by-example"
+version = "0.0.0"
+
+[[bin]]
+name = "hello_world"
+path = "src/hello_world.rs"
+
+[[bin]]
+name = "comments"
+path = "src/comments.rs"
+
+[[bin]]
+name = "formatted_print"
+path = "src/formatted_print.rs"
+
+[[bin]]
+name = "debug"
+path = "src/debug.rs"
+
+[[bin]]
+name = "display"
+path = "src/display.rs"
+
+[[bin]]
+name = "testcase_list"
+path = "src/testcase_list.rs"
+
+[[bin]]
+name = "formatting"
+path = "src/formatting.rs"
+
+[[bin]]
+name = "literals_and_operators"
+path = "src/literals_and_operators.rs"
+
+[[bin]]
+name = "tuples"
+path = "src/tuples.rs"
+
+[[bin]]
+name = "arrays_and_slices"
+path = "src/arrays_and_slices.rs"
+
+[[bin]]
+name = "structures"
+path = "src/structures.rs"
