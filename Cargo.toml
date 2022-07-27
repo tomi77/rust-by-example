@@ -69,3 +69,43 @@ path = "src/custom_types/testcase_linked_list.rs"
 [[bin]]
 name = "constants"
 path = "src/custom_types/constants.rs"
+
+[[bin]]
+name = "variable_bindings"
+path = "src/variable_bindings/variable_bindings.rs"
+
+[[bin]]
+name = "mutability"
+path = "src/variable_bindings/mutability.rs"
+
+[[bin]]
+name = "scope"
+path = "src/variable_bindings/scope.rs"
+
+[[bin]]
+name = "shadowing"
+path = "src/variable_bindings/shadowing.rs"
+
+[[bin]]
+name = "declare_first"
+path = "src/variable_bindings/declare_first.rs"
+
+[[bin]]
+name = "freezing"
+path = "src/variable_bindings/freezing.rs"
+
+[[bin]]
+name = "casting"
+path = "src/types/casting.rs"
+
+[[bin]]
+name = "literals"
+path = "src/types/literals.rs"
+
+[[bin]]
+name = "inference"
+path = "src/types/inference.rs"
+
+[[bin]]
+name = "aliasing"
+path = "src/types/aliasing.rs"
